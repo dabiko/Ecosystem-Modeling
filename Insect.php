@@ -1,5 +1,8 @@
 <?php
 
+// Including the Entity class
+require_once('Entity.php');
+
 // Class representing an Insect, extending the Entity class
 class Insect extends Entity {
     private $species;

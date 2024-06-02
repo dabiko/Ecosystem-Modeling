@@ -11,6 +11,10 @@ abstract class Entity {
         $this->age = $age;
     }
 
+     public function getName() {
+        return $this->name;
+    }
+
     // Abstract method to be implemented by derived classes
     abstract public function describe();
 }
