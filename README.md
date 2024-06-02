@@ -1,5 +1,5 @@
 # Ecosystem-Modeling
-Model a typical ecosystem of three entities: Animals, Plants, and Insects. 
+Modeling a typical ecosystem of three entities: Animals, Plants, and Insects. 
 Utilizing all relevant Object-Oriented Programming (OOP) concepts (Raw PHP).
 # Technical code explanation
 The following lines of code defines an ecosystem with animals, plants, 
@@ -17,10 +17,6 @@ to describe and interact with them.
 4. Using the Ecosystem class (Using_Ecosystem_Model.php)
 
 ###### Explanation of Each Step
-This code defines an ecosystem with animals, plants, and insects. 
-Each entity type is described by its properties, and interactions are specific 
-to each type. The Ecosystem class manages the collection of entities and can 
-call their respective methods to describe and interact with them.
 
 ##### Step One: Define the abstract base class
    1. We define an abstract class `Entity` with a protected property 
