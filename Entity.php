@@ -11,6 +11,7 @@ abstract class Entity {
         $this->age = $age;
     }
 
+    // Method that return the names of an Entity
      public function getName(): string
      {
         return $this->name;
