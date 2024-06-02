@@ -17,6 +17,11 @@ to describe and interact with them.
 4. Using the Ecosystem class (Using_Ecosystem_Model.php)
 
 ###### Explanation of Each Step
+This code defines an ecosystem with animals, plants, and insects. 
+Each entity type is described by its properties, and interactions are specific 
+to each type. The Ecosystem class manages the collection of entities and can 
+call their respective methods to describe and interact with them.
+
 ##### Step One: Define the abstract base class
    1. We define an abstract class `Entity` with a protected property 
    `$name`, `$age` and a constructor to initialize it.
@@ -248,3 +253,6 @@ description method.
 Demonstrating the key OOP concepts such as classes, objects, inheritance, 
 polymorphism, encapsulation, abstraction, and constructors to the 
 Ecosystem-Modeling task can be seen below.
+
+This code demonstrates encapsulation, inheritance, polymorphism, 
+and aggregation in a simple ecosystem model using raw PHP and OOP principles.
