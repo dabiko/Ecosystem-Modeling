@@ -307,3 +307,9 @@ is instantiated. It initializes the object's properties.
 ##### In the Ecosystem Modeling Task:
 1. The `__construct` method in each class initializes the object's properties 
 (`$name`, `$age`, and specific properties like `$species` or `$type`).
+
+
+#  Testing the Ecosystem Model on terminal or command line window
+1. Open the terminal or command line window
+2. Go to the folder or directory: *Ecosystem-Modeling*
+3. Run the PHP code using the command `php Using_Ecosystem_Model.php` 
