@@ -28,5 +28,4 @@ $ecosystem->interactEntities();
 
 // Get Entity Names
 echo PHP_EOL . "Getting All Entity Names:" . PHP_EOL;
-$entityNames = $ecosystem->getEntityNames();
-print_r($entityNames);
+$ecosystem->getEntityNames();

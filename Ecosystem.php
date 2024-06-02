@@ -2,22 +2,25 @@
 
 // Class representing the Ecosystem
 class Ecosystem {
-    private $entities = [];
+    private array $entities = [];
 
     // Method to add an entity to the ecosystem
-    public function addEntity(Entity $entity) {
+    public function addEntity(Entity $entity): void
+    {
         $this->entities[] = $entity;
     }
 
     // Method to describe all entities in the ecosystem
-    public function describeEntities() {
+    public function describeEntities(): void
+    {
         foreach ($this->entities as $entity) {
             echo $entity->describe() . PHP_EOL;
         }
     }
 
     // Method to interact with all entities in the ecosystem
-    public function interactEntities() {
+    public function interactEntities(): void
+    {
         foreach ($this->entities as $entity) {
             if ($entity instanceof Animal) {
                 echo $entity->makeSound() . PHP_EOL;
@@ -29,14 +32,17 @@ class Ecosystem {
         }
     }
 
-    public function getEntityNames() {
-        $names = [];
+    // Method to get all entity names in the ecosystem
+    public function getEntityNames(): void
+    {
         foreach ($this->entities as $entity) {
-            $names[] = $entity->getName();
+            if ($entity instanceof Animal) {
+                echo "Animal: ". $entity->getName() . PHP_EOL;
+            } elseif ($entity instanceof Plant) {
+               echo "Plant: ". $entity->getName() . PHP_EOL;
+            } elseif ($entity instanceof Insect) {
+                echo "Insect: ". $entity->getName() . PHP_EOL;
+            }
         }
-        return $names;
     }
 }
-
-
-

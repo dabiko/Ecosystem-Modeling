@@ -2,8 +2,8 @@
 
 // Abstract base class defining a common interface and properties
 abstract class Entity {
-    protected $name;
-    protected $age;
+    protected string $name;
+    protected int $age;
 
     // Constructor to initialize the properties
     public function __construct($name, $age) {
@@ -11,7 +11,8 @@ abstract class Entity {
         $this->age = $age;
     }
 
-     public function getName() {
+     public function getName(): string
+     {
         return $this->name;
     }
 

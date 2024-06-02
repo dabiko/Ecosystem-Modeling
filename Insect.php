@@ -5,7 +5,7 @@ require_once('Entity.php');
 
 // Class representing an Insect, extending the Entity class
 class Insect extends Entity {
-    private $species;
+    private string $species;
 
     // Constructor to initialize the properties
     public function __construct($name, $age, $species) {
@@ -14,12 +14,14 @@ class Insect extends Entity {
     }
 
     // Implementing the abstract method
-    public function describe() {
+    public function describe(): string
+    {
         return "Insect: $this->name, Age: $this->age, Species: $this->species";
     }
 
     // Additional method specific to Insect
-    public function buzz() {
+    public function buzz(): string
+    {
         return "$this->name is buzzing around the ecosystem.";
     }
 }
